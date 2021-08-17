@@ -1,4 +1,4 @@
-@extends('layouts')
+@extends('layout')
 
 @section('konten')
     <livewire:image.main>
