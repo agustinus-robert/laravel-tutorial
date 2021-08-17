@@ -23,8 +23,8 @@
 
     <body>
         <div class="container-fluid warp">
-            <nav class="navbar navbar-expand-lg navbar-dark p-2" style="background-color: #0a4275;">
-                <a class="navbar-brand" href="#">Navbar</a>
+            <nav class="navbar navbar-expand-lg navbar-dark p-2" style="background-color: #551ead;">
+                <a class="navbar-brand" href="#">V1-Tutorial</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -32,7 +32,7 @@
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Home</span></a>
+                            <a class="nav-link" href="#">Image Manipulation</span></a>
                         </li>
                     </ul>
                 </div>
@@ -44,7 +44,7 @@
         </div>
 
         <section class="">
-            <footer class="text-center text-white" style="background-color: #0a4275;">
+            <footer class="text-center text-white" style="background-color: #6610f2;">
                 <div class="container p-4 pb-0">
                     <section class="">
                         <p class="d-flex justify-content-center align-items-center">
@@ -55,7 +55,7 @@
                         </p>
                     </section>
                 </div>
-                <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                <div class="text-center p-3" style="background-color: #551ead;">
                     © <?=date('Y')?> Copyright:
                     <a class="text-white" href="https://mdbootstrap.com/">Tutorials</a>
                 </div>
