@@ -1,5 +1,5 @@
 @extends('layouts')
 
 @section('konten')
-    <livewire:tutorial.main>
+    <livewire:image.main>
 @endsection
