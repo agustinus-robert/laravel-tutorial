@@ -51,6 +51,14 @@ class Main extends Component
         return redirect(request()->header('Referer'));
     }
     
+     public function canvas(){
+        $img = Image::canvas(500, 400, '#6dd5ed');
+        $img->save('public/temporary/'.'temp_'.'gambar.jpg');
+        
+        Session::flash('pesan-berhasil', 'Gambar berhasil diubah');
+        return redirect(request()->header('Referer'));
+    }
+    
     public function render()
     {
         return view('livewire.image.main');

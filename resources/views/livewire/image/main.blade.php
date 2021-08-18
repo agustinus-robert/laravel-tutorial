@@ -38,7 +38,7 @@
                 <button class="btn btn-primary mb-4" wire:click="bright($event.target.value)" value="{{$image}}">Bright</button>
                 <button class="btn btn-primary mb-4" wire:click="blur($event.target.value)" value="{{$image}}">Blur</button>
                 <button class="btn btn-primary mb-4" wire:click="contrast($event.target.value)" value="{{$image}}">Contrast</button>
-                <button class="btn btn-primary mb-4" wire:click="canvas($event.target.value)" value="{{$image}}">Canvas</button>
+                <button class="btn btn-primary mb-4" wire:click="canvas()" value="{{$image}}">Canvas</button>
                 <button class="btn btn-primary mb-4" wire:click="colorize($event.target.value)" value="{{$image}}">Colorize</button>
                 <button class="btn btn-primary mb-4" wire:click="crop($event.target.value)" value="{{$image}}">Crop</button>
                 <button class="btn btn-primary mb-4" wire:click="greyscale($event.target.value)" value="{{$image}}">Greyscale</button>
