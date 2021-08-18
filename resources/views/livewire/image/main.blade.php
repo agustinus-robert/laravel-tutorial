@@ -1,4 +1,5 @@
 <div>
+    
     <div class="container">
         <div class="col-sm-12 mt-2">
             @if (session()->has('pesan-berhasil'))
@@ -9,7 +10,7 @@
                 </div>
             @endif
         </div>
-        
+       
         <div class="row">
             <div class="col-md-6 mt-4">
                 <fieldset>
@@ -33,7 +34,16 @@
         </div>
         
         <hr>
-        <button class="btn btn-primary mb-4" wire:click="bright($event.target.value)" value="{{$image}}">Bright</button>
-        <button class="btn btn-primary mb-4" wire:click="blur($event.target.value)" value="{{$image}}">Blur</button>
+            <div class="col text-center">
+                <button class="btn btn-primary mb-4" wire:click="bright($event.target.value)" value="{{$image}}">Bright</button>
+                <button class="btn btn-primary mb-4" wire:click="blur($event.target.value)" value="{{$image}}">Blur</button>
+                <button class="btn btn-primary mb-4" wire:click="contrast($event.target.value)" value="{{$image}}">Contrast</button>
+                <button class="btn btn-primary mb-4" wire:click="canvas($event.target.value)" value="{{$image}}">Canvas</button>
+                <button class="btn btn-primary mb-4" wire:click="colorize($event.target.value)" value="{{$image}}">Colorize</button>
+                <button class="btn btn-primary mb-4" wire:click="crop($event.target.value)" value="{{$image}}">Crop</button>
+                <button class="btn btn-primary mb-4" wire:click="greyscale($event.target.value)" value="{{$image}}">Greyscale</button>
+                <button class="btn btn-primary mb-4" wire:click="opacity($event.target.value)" value="{{$image}}">Opacity</button>
+                <button class="btn btn-primary mb-4" wire:click="invert($event.target.value)" value="{{$image}}">Invert</button>
+            </div>
     </div>
 </div>
