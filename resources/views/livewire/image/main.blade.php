@@ -1,8 +1,8 @@
 <div>
     <div class="container">
-        <div class="col-md-12">
+        <div class="col-sm-12 mt-2">
             @if (session()->has('pesan-berhasil'))
-                <div class="col-md-12">
+                <div class="col-sm-12">
                     <div class="alert alert-warning">
                         {{ session('pesan-berhasil') }}
                     </div>

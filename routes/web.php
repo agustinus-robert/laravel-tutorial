@@ -13,4 +13,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'image\main@index');
+Route::get('/', 'image\main@index')->name('index.image');
