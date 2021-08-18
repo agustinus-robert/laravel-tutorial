@@ -22,14 +22,22 @@ class Main extends Component
         $this->hapus_temporary($value);
         
         $img = Image::make('public/'.$value);
-        $img->brightness(20);
+        $img->brightness(80);
         $img->save('public/temporary/'.'temp_'.$value);
         
         Session::flash('pesan-berhasil', 'Gambar berhasil diubah');
-//       return redirect(route('index.image'));
-        //return redirect()->to('/');
         return redirect(request()->header('Referer'));
-        //return \App::make('redirect')->refresh()->with('pesan-berhasil', 'Thank you,!');
+    }
+    
+    public function blur($value){
+        $this->hapus_temporary($value);
+        
+        $img = Image::make('public/'.$value);
+        $img->blur(35);
+        $img->save('public/temporary/'.'temp_'.$value);
+        
+        Session::flash('pesan-berhasil', 'Gambar berhasil diubah');
+        return redirect(request()->header('Referer'));
     }
     
     public function render()
