@@ -15,18 +15,17 @@ class Main extends Component
         $image_path = 'temp_'.$val;  // Value is not URL but directory file path
         if(File::exists($image_path)) {
             File::delete(public_path('temporary/'. $image_path));
-            Session::flash('pesan-ubah-gambar',"Gambar berhasil diubah");
-        } else {
-            Session::flash('pesan-hapus-gambar-gagal',"Gambar gagal diubah");
-        }
+        } 
     }
     
     public function bright($value){
         $this->hapus_temporary($value);
         
-//        $img = Image::make('public/'.$value);
-//        $img->brightness(30);
-//        $img->save('public/temporary/'.'temp_'.$value);
+        $img = Image::make('public/'.$value);
+        $img->brightness(70);
+        $img->save('public/temporary/'.'temp_'.$value);
+        
+         Session::flash('pesan-berhasil',"Method brightness berhasil dijalankan");
     }
     
     public function render()
