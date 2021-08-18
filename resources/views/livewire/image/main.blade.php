@@ -1,7 +1,7 @@
 <div>
     <div class="container">
         <div class="col-md-12">
-            @if (session()->has('message'))
+            @if (session()->has('pesan-berhasil'))
                 <div class="col-md-12">
                     <div class="alert alert-warning">
                         {{ session('pesan-berhasil') }}
@@ -34,6 +34,6 @@
         
         <hr>
         <button class="btn btn-primary mb-4" wire:click="bright($event.target.value)" value="{{$image}}">Bright</button>
-        
+        <button class="btn btn-primary mb-4" wire:click="blur($event.target.value)" value="{{$image}}">Blur</button>
     </div>
 </div>

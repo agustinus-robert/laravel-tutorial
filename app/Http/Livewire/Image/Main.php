@@ -22,10 +22,10 @@ class Main extends Component
         $this->hapus_temporary($value);
         
         $img = Image::make('public/'.$value);
-        $img->brightness(70);
+        $img->brightness(80);
         $img->save('public/temporary/'.'temp_'.$value);
         
-         Session::flash('pesan-berhasil',"Method brightness berhasil dijalankan");
+        return redirect()->route('/')->with("pesan-berhasil","Method brightness berhasil dijalankan");
     }
     
     public function render()
