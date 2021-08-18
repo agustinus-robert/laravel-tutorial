@@ -17,6 +17,30 @@
             .footers{
                 clear:both;
             }
+            
+            fieldSet
+            {
+                width: 97%; 
+                margin-left: 10px;
+                border:0;
+                margin:0;
+            }
+
+            legend
+            {
+
+                border-style:none;
+                background-color: #003366;
+                font-family: Tahoma, Arial, Helvetica;
+                font-weight: bold;
+                font-size: 9.5pt;
+                Color: White;
+                width:30%;
+                padding-left:10px;
+
+            }
+
+            fieldset div { border:1px solid #003366; position:relative; top:-6px }
         </style>
         <livewire:styles />
     </head>
