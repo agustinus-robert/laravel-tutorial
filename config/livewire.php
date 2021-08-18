@@ -54,7 +54,7 @@ return [
     |
     */
 
-    'asset_url' => 'http://locahost/laravel_tutorial',
+    'asset_url' => 'http://localhost/laravel_tutorial',
 
     /*
     |--------------------------------------------------------------------------
