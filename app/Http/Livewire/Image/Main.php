@@ -91,6 +91,18 @@ class Main extends Component
         Session::flash('pesan-berhasil', 'Gambar berhasil diubah');
         return redirect(request()->header('Referer'));
     }
+
+    
+    public function invert($value){
+        $this->hapus_temporary($value);
+        
+        $img = Image::make('public/'.$value);
+        $img->invert();
+        $img->save('public/temporary/'.'temp_'.$value);
+        
+        Session::flash('pesan-berhasil', 'Gambar berhasil diubah');
+        return redirect(request()->header('Referer'));
+    }
     
     public function render()
     {
