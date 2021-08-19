@@ -59,6 +59,17 @@ class Main extends Component
         return redirect(request()->header('Referer'));
     }
     
+     public function colorize($value){
+        $this->hapus_temporary($value);
+        
+        $img = Image::make('public/'.$value);
+        $img->colorize(100, 22, 57);
+        $img->save('public/temporary/'.'temp_'.$value);
+        
+        Session::flash('pesan-berhasil', 'Gambar berhasil diubah');
+        return redirect(request()->header('Referer'));
+    }
+    
     public function render()
     {
         return view('livewire.image.main');
