@@ -16,3 +16,4 @@ Route::get('/', 'image\main@index')->name('index.image');
 Route::get('/image-intervention', 'image\main@index')->name('index.image');
 
 Route::get('/database-when','laravels\databse@models_when');
+Route::get('/database-sub-query','laravels\databse@sub_query');
