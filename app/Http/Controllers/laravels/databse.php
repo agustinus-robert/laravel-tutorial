@@ -11,5 +11,6 @@ class databse extends Controller
     //
     public function models_when(){
         
+        return view('laravels.view_model_when');
     }
 }
