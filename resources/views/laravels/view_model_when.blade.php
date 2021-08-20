@@ -7,7 +7,7 @@
             
             <div class="col-md-12" style="background-color:#c8d3dc; border-radius:15px; min-height:300px;">
                 <pre>
-                    <?php print_r(null); ?>
+                    <?php print_r($vars); ?>
                 </pre>
             </div>
         </div>
