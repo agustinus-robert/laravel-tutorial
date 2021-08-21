@@ -62,21 +62,7 @@
                     
                     <ul class="navbar-nav">
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Database </a>
-                                <div class="dropdown-menu mt-2 ml-5" role="menu" style="min-width:400px;">
-                                    <div class="row text-center">
-                                        <div class="col-lg-6">
-                                            <h6 class="title">Query Builder</h6>
-                                            <ul class="list-unstyled">
-                                                <li><a href="{{url('/database-when')}}">When</a></li>
-                                            </ul>
-                                        </div> 
-
-                                        <div class="col-lg-6">
-                                            <h6 class="title">Eloquent</h6>
-                                        </div>                         
-                                    </div>
-                                </div> 
+                                <a class="nav-link" href="{{url('/charts-index')}}">Charts</a>
                             </li>
                         </ul>
                 </div>
