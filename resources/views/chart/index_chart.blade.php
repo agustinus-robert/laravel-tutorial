@@ -1,5 +1,5 @@
 @extends('layout')
 
 @section('konten')
-    <livewire:chart.charts>
+    @livewire('chart.charts')
 @endsection
