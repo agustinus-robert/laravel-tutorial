@@ -41,6 +41,7 @@
             }
 
             fieldset div { border:1px solid #003366; position:relative; top:-6px }
+           
         </style>
          <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.6.0/dist/alpine.js" defer></script>
         @livewireStyles
@@ -95,6 +96,7 @@
        <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
         
         @livewireScripts
-        @livewireChartsScripts
+        
+       <script type="module" src="<?php echo url('resources/js/vendor/livewire-charts/app.js'); ?>"></script>
     </body>
 </html>
