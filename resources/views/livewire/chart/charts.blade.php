@@ -1,6 +1,6 @@
 <div>
-    <div class="row">
-        <ul class="abc">
+    <div class="container row">
+        <ul>
             <li>
                 <input type="checkbox" value="steve jobs" wire:model="judul_buku"/>
                 <span>Steve Jobs</span>
