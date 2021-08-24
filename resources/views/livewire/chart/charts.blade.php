@@ -1,22 +1,14 @@
 <div>
     <div class="container row">
         <ul>
+            <?php 
+                foreach($temporary as $k => $v){ 
+            ?>
             <li>
-                <input type="checkbox" value="steve jobs" wire:model="judul_buku"/>
-                <span>Steve Jobs</span>
+                <input type="checkbox" value="{{$v}}" wire:model="judul_game" selected />
+                <span>{{$v}}</span>
             </li>
-            <li>
-                <input type="checkbox" value="das kapital" wire:model="judul_buku"/>
-                <span>Das Kapital</span>
-            </li>
-            <li>
-                <input type="checkbox" value="davinci code" wire:model="judul_buku"/>
-                <span>Davinci Code</span>
-            </li>
-            <li>
-                <input type="checkbox" value="dante (Inferno)" wire:model="judul_buku"/>
-                <span>Dante (Inferno)</span>
-            </li>
+            <?php } ?>
         </ul>
     </div>
     
@@ -26,4 +18,6 @@
             :column-chart-model="$columnChartModel"
         />
     </div>
+    
+    
 </div>
