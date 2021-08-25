@@ -20,3 +20,5 @@ Route::get('/database-sub-query','laravels\databse@sub_query');
 
 Route::get('/charts-index','chart\charts@index_chart');
 Route::get('/datatables-game','datatables\DatatablesController@index');
+
+Route::get('/select2','select\select2C@index');
