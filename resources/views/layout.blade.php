@@ -5,6 +5,11 @@
         <script src="{{url('public/bootstrap/bootstrap.min.js')}}"></script>
         <script src="{{url('public/bootstrap/jquery.min.js')}}"></script>
         <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+      
+        <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+        <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
         <style>
             .container-fluid{
                 padding: 0;
@@ -107,6 +112,7 @@
        <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
         
         @livewireScripts
+        <x:pharaonic-select2::scripts />
         
        <script type="module" src="<?php echo url('resources/js/vendor/livewire-charts/app.js'); ?>"></script>
     </body>
