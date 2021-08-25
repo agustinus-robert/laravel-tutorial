@@ -1,3 +1,5 @@
 <div>
-    <livewire:game-datatables />
+    <div class="container">
+        <livewire:game-datatables />
+    </div>
 </div>
