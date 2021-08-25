@@ -19,3 +19,4 @@ Route::get('/database-when','laravels\databse@models_when');
 Route::get('/database-sub-query','laravels\databse@sub_query');
 
 Route::get('/charts-index','chart\charts@index_chart');
+Route::get('/datatables-game','datatables\DatatablesController@index');

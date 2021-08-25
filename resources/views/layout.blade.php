@@ -4,6 +4,7 @@
         <link href="{{url('public/bootstrap/bootstrap.min.css')}}" rel="stylesheet">
         <script src="{{url('public/bootstrap/bootstrap.min.js')}}"></script>
         <script src="{{url('public/bootstrap/jquery.min.js')}}"></script>
+        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
         <style>
             .container-fluid{
                 padding: 0;
@@ -67,10 +68,16 @@
                     </ul>
                     
                     <ul class="navbar-nav">
-                            <li class="nav-item dropdown">
-                                <a class="nav-link" href="{{url('/charts-index')}}">Charts</a>
-                            </li>
-                        </ul>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="{{url('/charts-index')}}">Charts</a>
+                        </li>
+                    </ul>
+                    
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{url('/datatables-game')}}">Datatable</a>
+                        </li>
+                    </ul>
                 </div>
             </nav>
 
