@@ -87,6 +87,12 @@
                             <a class="nav-link" href="{{url('/datatables-game')}}">Datatable</a>
                         </li>
                     </ul>
+                    
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{url('/local_store')}}">Local Store</a>
+                        </li>
+                    </ul>
                 </div>
             </nav>
 

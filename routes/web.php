@@ -22,3 +22,4 @@ Route::get('/charts-index','chart\charts@index_chart');
 Route::get('/datatables-game','datatables\DatatablesController@index');
 
 Route::get('/select2','select\select2C@index');
+Route::get('/local_store','memory\localStore@index');

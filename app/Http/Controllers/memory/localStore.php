@@ -9,6 +9,6 @@ class localStore extends Controller
 {
     //
     public function index(){
-        return View('memory.');
+        return View('memory.memory');
     }
 }
