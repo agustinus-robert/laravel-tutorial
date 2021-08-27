@@ -17,6 +17,10 @@ class LocalStore extends Component
         }
     }
     
+    public function remove_local_storage(){
+        unset($this->arr);
+    }
+    
     public function render()
     {
         return view('livewire.memory.local-store');
