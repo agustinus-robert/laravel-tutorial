@@ -19,6 +19,7 @@ class LocalStore extends Component
     
     public function remove_local_storage(){
         unset($this->arr);
+        $this->increment = 0;
     }
     
     public function render()
