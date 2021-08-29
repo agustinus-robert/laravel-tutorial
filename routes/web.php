@@ -27,3 +27,4 @@ Route::get('/tambah_data','form_masuk\form@index');
 
 Route::get('/hydrate','hydrate\hydrate@index');
 Route::get('/livewire', [\App\Http\Livewire\Control\Livewire::class, '__invoke']);
+Route::get('/chat',[\App\Http\Livewire\Chat\Chatroom::class, '__invoke']);
