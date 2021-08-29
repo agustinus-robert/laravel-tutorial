@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use \App\Http\Livewire\Control\Livewire;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -26,3 +26,4 @@ Route::get('/local_store','memory\localStore@index');
 Route::get('/tambah_data','form_masuk\form@index');
 
 Route::get('/hydrate','hydrate\hydrate@index');
+Route::get('/livewire', [\App\Http\Livewire\Control\Livewire::class, '__invoke']);
