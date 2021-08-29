@@ -1,6 +1,6 @@
 <div>
     <div class="container mt-3">
-        <div x-data="{ count: @entangle('arr') }" class="mt-5">
+        <div class="mt-5">
             <div class="row mx-auto" style="width:800px;">
                 <div class="form-group col-md-6">
                   <label for="inputEmail4">Nama</label>
