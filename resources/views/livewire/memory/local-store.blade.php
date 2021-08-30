@@ -1,6 +1,6 @@
 <div>
     <div class='container text-center'>
-        <div x-data="{ count: @entangle('arr') }" class="mt-5">
+        <div x-data="{ count: $persist(@entangle('arr')) }" class="mt-5">
             <button class='btn btn-success' style="width:100px;height:50px;" wire:click="add()">add</button>
         </div>
         

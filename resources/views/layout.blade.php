@@ -56,7 +56,7 @@
                 padding:20px;
             }
         </style>
-        <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+       
         
         @livewireStyles
     </head>
@@ -120,7 +120,8 @@
             </footer>
         </section>
        <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
-        
+         <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+         
         @livewireScripts
         <x:pharaonic-select2::scripts />
         
