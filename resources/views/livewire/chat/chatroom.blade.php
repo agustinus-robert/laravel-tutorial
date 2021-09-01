@@ -54,6 +54,7 @@
                <input class="form-control mb-3" type="text" wire:model="chat" />
                <button class="btn btn-primary" wire:click="add_c({{array_values($online_array)[0]}})" value="masuk">Chat</button>
                <button class="btn btn-danger" wire:click="end_cht()">End Chat</button>
+               <button class="btn btn-success" onclick="Livewire.emit('openModal', 'show-status-chat', {{ json_encode(["id" => array_values($online_array)[0]]) }})">Status User</button>
            </div>
        <?php } ?>
       </div>

@@ -120,7 +120,6 @@
             </footer>
         </section>
        <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
-        <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
         <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
         @livewire('livewire-ui-modal')
