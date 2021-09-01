@@ -2,8 +2,8 @@
 
 namespace App\Http\Livewire\Chat;
 
-use App\Chats as chat;
 use App\chatsUser as cUser;
+use App\Chats as chs;
 use Livewire\Component;
 
 class Chatroom extends Component
@@ -15,6 +15,7 @@ class Chatroom extends Component
     public $online_array = [];
     public $open;
     public $pilih;
+    public $isi_chat = [];
     
     public function mount(){
         $cUser = cUser::select('*')->get()->toArray();
@@ -23,6 +24,18 @@ class Chatroom extends Component
             $this->user[$v['id']] = $v['nama'];
         }
     }
+    
+    
+     public function loadData()
+    {
+        $this->isi_chat = chs::select('*')->get()->toArray();
+        $temporary = $this->isi_chat;
+        
+        if(count($this->isi_chat) != $temporary){
+            $this->isi_chat = chs::select('*')->get()->toArray();
+        }
+    }
+    
     
     public function opens(){    
         if($this->pilih > 0){
@@ -36,16 +49,24 @@ class Chatroom extends Component
     }
     
     public function add_c($id){
-        foreach($this->chat as $p => $san){
-            $this->arr[] = [
+
+            $this->arr = [
                 'id_user' => $id,
-                'chat_pesan' => $san['chats']
+                'chat_pesan' => $this->chat
             ];
-        }
+        
+            chs::create($this->arr);
+            
+           $this->isi_chat = chs::select('*')->get()->toArray();
+        //    $this->emit('refreshComponent');
     }
     
+    public function end_cht(){
+        unset($this->online_array);
+    }
     public function render()
     {
+       
         return view('livewire.chat.chatroom')->extends('layout')->section('konten');
     }
 }

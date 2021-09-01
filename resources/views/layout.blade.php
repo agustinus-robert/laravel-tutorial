@@ -96,7 +96,7 @@
                 </div>
             </nav>
 
-            <div class="konten">
+            <div class="konten" style="min-height:800px;">
                 @yield('konten')
             </div>
         </div>
